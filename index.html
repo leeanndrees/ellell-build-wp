@@ -4,13 +4,15 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Build Your First WordPress Website!</title>
 
 		<link rel="stylesheet" href="reveal/css/reveal.css">
 		<link rel="stylesheet" href="reveal/gc/gc.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="reveal/css/emoji.css">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +26,1008 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Welcome Section -->
+				<section>
+				  <section>
+				    <h3>Welcome! <i class="twa twa-heart"></i></h3>
+						<h2>Build Your First WordPress Website</h2>
+				    <p>#GCWordPress</p>
+				  </section>
+				  <section data-markdown>
+				    ## About Us: Laura Eagin
+				  </section>
+					<section data-markdown>
+				    ## About Us: Leeann Drees
+				  </section>
+				  <section>
+				    <h2>About You</h2>
+				    <ul style="width: 40%;">
+				      <li>What's your name?</li>
+				      <li>Have you used WordPress?</li>
+				      <li>What are you hoping to get out of this class?</li>
+				      <li>What was your first concert?</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>About The Class: Our Objectives</h2>
+				    <p>At the end of this workshop, you will understand:</p>
+				    <ul>
+				      <li>the basics of hosting, domains, &amp; how websites work</li>
+				      <li>how to set up a new WordPress site</li>
+				      <li>how to add content to your WordPress site</li>
+				      <li>how to extend WordPress functionality</li>
+				      <li>how to customize the look &amp; feel of your WordPress site</li>
+				      <li>how to make your WordPress site secure</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>About The Class: Overview</h2>
+				    <p>Day 1:</p>
+				    <ul>
+				      <li>Why WordPress?</li>
+							<li>WordPress.com vs. WordPress.org</li>
+				      <li>How Websites Work</li>
+				      <li>How to Set up a WordPress Website</li>
+				      <li>Getting Started with your WordPress Website</li>
+				      <li>Adding Content (Pages &amp; Posts)</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>About The Class: Overview</h2>
+				    <p>Day 2:</p>
+				    <ul>
+				      <li>Menus</li>
+				      <li>Widgets</li>
+				      <li>Plugins</li>
+							<li>Themes</li>
+				      <li>Security</li>
+				      <li>Maintenance</li>
+				      <li>Questions?</li>
+				      <li>Resources</li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Welcome Section -->
+
+				<!-- Why WordPress? -->
+				<section>
+				  <section>
+				    <h2>Why WordPress?</h2>
+				  </section>
+				  <section>
+				    <h3>Reasons to &hearts; WordPress:</h3>
+				    <ul>
+				      <li>speed</li>
+				      <li>popularity</li>
+				      <li>flexibility</li>
+				      <li>collaboration</li>
+				      <li>client-friendly</li>
+				      <li>budget-friendly</li>
+				    </ul>
+				    <img src="img/wordpress_logo.png" class="no-border" width="200">
+				  </section>
+				  <section>
+				    <h3>Some example WordPress sites:</h3>
+				    <ul>
+				      <li><a href="http://time.com/" target="_blank">Time Magazine</a></li>
+				      <li><a href="http://smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+				      <li><a href="http://www.tilda.com/" target="_blank">Tilda.com</a></li>
+				      <li><a href="http://www.bakersribs.com/wp/" target="_blank">Baker's Ribs</a></li>
+				      <li><a href="http://praxislifesciences.com/" target="_blank">Praxis Life Sciences</a></li>
+				      <li><a href="http://burtekenterprises.com/" target="_blank">Burtek Enterprises</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>A Brief History of WordPress</h2>
+				    <img src="img/printing_press.png" class="float-right">
+				    <ul>
+				      <li>Created in 2003</li>
+				      <li>Got its start as blogging software</li>
+				      <li>Matt Mullenweg, Automattic</li>
+				      <li>WordPress is <em>open source</em></li>
+				    </ul>
+				    <p>Learn more: <a href="https://codex.wordpress.org/History" target="_blank">WordPress Codex: History</a></p>
+				  </section>
+				  <section>
+				    <h2>WordPress.com vs WordPress.org</h2>
+				    <p>Believe it or not, they're different things!</p>
+				    <a href="http://wordpress.com" target="_blank"><img src="img/wordpress_com.png" class="float-left" width="450"></a>
+				    <a href="http://wordpress.org" target="_blank"><img src="img/wordpress_org.png" class="float-right" width="450"></a>
+				  </section>
+				  <section>
+				    <h3>WordPress.com</h3>
+				    <ul class="float-right">
+				      <li class="fragment left-align"><a href="http://wordpress.com" target="_blank">WordPress.com</a> is "free"</li>
+				        <ul><li class="fragment">Similar to Blogger, Tumblr, TypePad etc.</li></ul>
+				      <li class="fragment  left-align">They host your files.</li>
+				      <li class="fragment left-align">By default your domain name will be: <span class="green">YourName.WordPress.com</span></li>
+				      <li class="fragment  left-align">Customization options are extremely limited.</li>
+				      <li class="fragment  left-align">Your site will have ads, until you pay to remove them.</li>
+				      <li class="fragment left-align">Your blog will be part of a built-in network.</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Self Hosted : WordPress.org</h3>
+				    <ul>
+				      <li class="fragment"><em>Self-hosted</em> WordPress sites run the WordPress software, which can be downloaded for free at <a href="http://wordpress.org" target="_blank">WordPress.org</a></li>
+				      <li class="fragment">For the site to be online, you still must purchase a domain and hosting plan</li>
+				      <li class="fragment">The sky's the limit with your self-hosted WP site!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>WordPress.com vs. a Self-Hosted Site</h3>
+				    <strong>Which is right for you?</strong>
+				    <ul>
+				      <li><em>Self-hosted sites</em> look more professional, can be fully customized, and have the potential for features like e-commerce and monetization</li>
+				      <li><em>WordPress.com sites</em> are easier to set up, managed for you, and expose you to a built-in network of bloggers</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>WordPress.com vs. a Self-Hosted Site</h3>
+				    <p>In this class we'll be focusing on <em>self-hosted</em> WordPress sites, but a lot of the features we'll use are available on WordPress.com as well.</p>
+				    <p class="left-align fragment"><strong>Learn More:</strong> <a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank">WordPress.org vs WordPress.com Infographic</a></p>
+				    <p class="left-align fragment"><strong>Note:</strong> It's easy to move content from a WordPress.com site to a self-hosted site.</p>
+				  </section>
+				</section>
+				<!-- End Why WordPress? -->
+
+				<!-- How Websites Work -->
+				<section>
+				  <section>
+				    <h2>How Websites Work</h2>
+				  </section>
+				  <section>
+				    <h3>What is a Website?</h3>
+				    <p>A website is a collection of folders (directories) and files (documents) that are accessible online.</p>
+				    <img src="img/website_files.png">
+				  </section>
+				  <section>
+				    <h3>What is a Website?</h3>
+				    <p>For our website to be accessible online, we need those folders and files to live on a computer that is always online.</p>
+				    <p>These computers are called <em>servers</em>.</p>
+				  </section>
+				  <section>
+				    <h3>Web Hosting</h3>
+				    <p>When you buy a web hosting plan, you are buying space on a server for your website (folders + files) to live.</p>
+				  </section>
+				  <section>
+				    <h3>Domain Name</h3>
+				    <p>The domain name is the address at which people can find your website.</p>
+				    <p>Example: <em>http://grandcircus.co</em></p>
+				  </section>
+				  <section>
+				    <h3>Buying Hosting Plan + Domain Name</h3>
+				    <p>You can buy these separately, but typically you'll purchase them together as part of the same plan</p>
+				    <p>There are TONS of hosting companies out there!</p>
+				    <p><a href="http://www.whoishostingthis.com/compare/wordpress/" target="_blank">Read reviews of hosting companies, based on their performance with WordPress</a></p>
+				  </section>
+				  <section>
+				    <h3>Managed WordPress Hosting</h3>
+				    <p>Manages all technical aspects of WordPress for you</p>
+				    <p>More expensive than typical hosting plans</p>
+				    <p>Great for e-commerce and enterprise-level sites</p>
+				    <p><a href="http://www.wpbeginner.com/managed-wordpress-hosting/#hostneeds-slidetoggle" target="_blank">A good overview of the pros &amp; cons of managed hosting</a></p>
+				  </section>
+				</section>
+				<!-- End How Websites Work -->
+
+				<!-- How to Set Up a WordPress Website -->
+				<section>
+				  <section>
+				    <h2>How To Set Up a WordPress Website</h2>
+				  </section>
+				  <section>
+				    <h2>You Need:</h2>
+				    <p>Web Hosting<p>
+				      <p>+</p>
+				    <p>A Domain Name</p>
+				      <p>+</p>
+				    <p>WordPress Installed on Your Hosting</p>
+				  </section>
+				  <section>
+				    <h3>Installing WordPress</h3>
+				    <p>There are two ways to install WordPress on your hosting account:</p>
+				    <ul>
+				      <li>1-click</li>
+				      <li>manual</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: 1-Click</h3>
+				    <p>Look for hosting providers that offer this!</p>
+				    <img src="img/one_click.jpeg" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p>Hopefully you never have to do this! But understanding the steps can help us better understand how WordPress works.</p>
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p class="align-left">Download the latest version of WordPress from <a href="http://wordpress.org" target="_blank">WordPress.org</a></p>
+				    <img src="img/wordpress_org.png" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p class="align-left">Create a MySQL database on your hosting account</p>
+				    <img src="img/create_database.jpg" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p class="align-left">Edit 4 lines in <strong>wp-config-sample.php</strong></p>
+				    <pre><code>
+				// ** MySQL settings - You can get this info from your web host ** //
+				/** The name of the database for WordPress */
+				define('DB_NAME', 'database_name_here');
+
+				/** MySQL database username */
+				define('DB_USER', 'username_here');
+
+				/** MySQL database password */
+				define('DB_PASSWORD', 'password_here');
+
+				/** MySQL hostname */
+				define('DB_HOST', 'localhost');
+
+				/** Database Charset to use in creating database tables. */
+				define('DB_CHARSET', 'utf8');
+
+				/** The Database Collate type. Don't change this if in doubt. */
+				define('DB_COLLATE', '');</code></pre>
+				    <p>Save the file and rename it to <strong>wp-config.php</strong></p>
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p class="align-left">Upload the WP software to your hosting via FTP</p>
+				    <ul>
+				      <li><em>FTP</em>, or file transfer protocol, is a tool for moving files between your computer and your web host</li>
+				      <li>You'll need an <em>FTP client</em> to transfer files. There are lots of free ones, like <a href="https://filezilla-project.org/" target="_blank">Filezilla</a> and <a href="https://cyberduck.io/?l=en" target="_blank">Cyberduck</a></li>
+				      <li>Your web hosting provider can help you get set up with FTP if you get stuck!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p class="align-left">Browse to <strong>yoursite.com/install.php</strong> and follow the prompts</p>
+				    <img src="img/install-screen.png" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Installing WordPress: Manual</h3>
+				    <p><a href="codex.wordpress.org/Installing_WordPress" target="_blank">Detailed instructions in the WordPress Codex</a></p>
+				    <p>WordPress calls this the "Famous 5-minute Install," which might be a less than completely accurate. :)</p>
+				  </section>
+				  <section>
+				    <h2>Hands on: Let's Install WordPress!</h2>
+				    <ol>
+				      <li>If you have <em>web hosting that offers 1-click install</em>, do that! We'll help you out if you get stuck.</li>
+				      <li>Otherwise, head to <a href="https://bitnami.com/stack/wordpress/installer" target="_blank">Bitnami</a> and follow the instructions for a <em>local install</em>. This will allow you to have a copy of WordPress on your computer that you can work on in class.</li>
+				      <li>If that doesn't work out, let me know and we'll get something set up for you!</li>
+				    </ol>
+				  </section>
+				</section>
+				<!-- End How to Set Up -->
+
+				<!-- Getting Started -->
+				<section>
+				  <section>
+				    <h2>Getting Started with Your WordPress Website</h2>
+				  </section>
+				  <section>
+				    <h3>The Dashboard</h3>
+				    <ul>
+				      <li>What you'll see when you log in to your WordPress site</li>
+				      <li>Find it at yoursite.com<strong>/wp-admin</strong></li>
+				    </ul>
+				    <img src="img/dashboard.png" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Configure Your Basic Settings</h3>
+				    <p>The first thing to do with any new install of WordPress is to make sure we get off to a good start with the correct settings!</p>
+
+				    <p><a href="http://gdidetroit.com/wordpress/slides/cheatsheet.pdf" target="_blank">This cheat sheet</a> from <a href="http://www.wpuniversity.com/" target="_blank">WPUniversity</a> is a great resource for remembering which settings are generally best.</p>
+				  </section>
+				  <section>
+				    <h4>Users &gt; Your Profile</h4>
+				    <ul>
+				      <li class="fragment"><strong>Personal Options:</strong> Set preferences to customize your WordPress Dashboard</li>
+				      <li class="fragment"><strong>Name:</strong> Choose how your name will be publicly displayed.
+				        <ul class="fragment">
+				          <li><em>Recommended:</em> Keep your public display name different from your username</li>
+				        </ul>
+				      </li>
+				      <li class="fragment"><strong>Contact Info:</strong> Keep this up to date!</li>
+				      <li class="fragment"><strong>About Yourself:</strong> This is where you change your password!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Settings &gt; General</h4>
+				    <ul>
+				      <li class="fragment">Make sure to change that <strong>tagline</strong>!</li>
+				      <li class="fragment">Keep the <strong>email address</strong> here up to date always. It's what WordPress will use to contact you about any changes made to your site.</li>
+				      <li class="fragment">This is also where you can configure things like the date format and time zone – double-check that they're right!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Settings &gt; Reading</h4>
+				    <ul>
+				      <li class="fragment">Choose which page displays as your homepage! (We'll come back to this once we have some pages and posts in place.)</li>
+				      <li class="fragment">Choose how your blog posts display.</li>
+				      <li class="fragment"><strong>Search engine visibility</strong>: can be useful if you're not ready to have your site fully accessible to the world yet. Don't forget to uncheck it when you do launch!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Settings &gt; Permalinks</h4>
+				    <ul>
+				      <li><strong>Permalinks</strong> are permanent, static hyperlinks to a particular web page or entry in a blog</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Settings &gt; Permalinks</h4>
+				    <ul>
+				      <li>Default permalinks are ugly: http://yoursite.com/<strong>?p=123</strong></li>
+				      <li class="fragment">Post names work well for most sites: http://yoursite.com/<strong>contact-us/</strong></li>
+				      <li class="fragment">Some combination of date &amp; name works well for sites with lots of timely content (news sites or blogs, for example):
+				        <ul>
+				          <li>Day and name: http://yoursite.com/<strong>2015/06/16/sample-post/</strong></li>
+				          <li>Month and name: http://yoursite.com/<strong>2015/06/sample-post/</strong></li>
+				        </ul>
+				      </li>
+				      <li class="fragment">You can even set up a <strong>custom structure</strong> if none of these work for you</li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Getting Started -->
+
+				<!-- Adding Content -->
+				<section id="content">
+				  <section>
+				    <h2>Adding Content to Your WordPress Website</h2>
+				    <ul>
+				      <li><a href="#page">Publish a Page</a></li>
+				      <li><a href="#post">Publish a Post</a></li>
+				    </ul>
+				  </section>
+				  <section id="page">
+				    <h3>Publish a Page</h3>
+				    <img src="img/add_page.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: First Steps</h4>
+				    <ul>
+				      <li>Give your page a title.</li>
+				        <ul>
+				          <li>How about "About Us"?</li>
+				        </ul>
+				      <li>Type your page's content into the editor.</li>
+				        <ul>
+				          <li>Feel free to use <a href="http://www.catipsum.com/" target="_blank">dummy text</a> for now.</li>
+				        </ul>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Getting Fancy</h4>
+				    <ul>
+				      <li>Format your text: italicize, bold.</li>
+				      <img src="img/text_formatting.png" class="no-border">
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Getting Fancy</h4>
+				    <ul>
+				      <li>Add links!</li>
+				      <img src="img/text_linking.png" class="no-border">
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Getting Fancy</h4>
+				    <ul>
+				      <li>Use headings</li>
+				      <img src="img/toolbar_toggle.png" class="no-border">
+				    </ul>
+				    <br><br>
+				    <p class="left-align smaller"><span class="underline">Note:</span> While the editor does allow you to change the text color, I don't recommend doing so there! Text color, font, and other aesthetic options should be handled by your WordPress theme.</p>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Visual vs. Text Editor</h4>
+				    <img src="img/visual_editor.png" class="no-border" style="width:40%;">
+				    <img src="img/text_editor.png" class="no-border" style="width:55%;">
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Adding Images</h4>
+				    <ul>
+				      <li>Insert an image!</li>
+				      <img src="img/add_image.png" class="no-border">
+				    </ul>
+				    <p>Use the "Add Media" button above the text editor.</p>
+				    <p>The placement of your cursor matters!</p>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Adding Images</h4>
+				    <img src="img/image_options.png" class="no-border float-left">
+				    <ul style="width: 60%; font-size: 90%;">
+				      <li><strong>Caption</strong>: will usually display on your page (depending on your theme)</li>
+				      <li><strong>Alt text</strong>: important for accessibility and SEO</li>
+				      <li><strong>Description</strong>: Displays on the attachment page</li>
+				      <li><strong>Link to</strong>: whatever you want! By default, full-size image</li>
+				      <li><strong>Size</strong>: WordPress generates multiple sizes of each image you upload</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Last Steps</h4>
+				    <ul>
+				      <li>Preview your page</li>
+				      <li>Does everything look good?</li>
+				      <li>Test your links!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Last Steps</h4>
+				    <p>Check your Page Attributes</p>
+				    <ul>
+				      <li>Parent</li>
+				      <li>Template (theme-dependent)</li>
+				      <li>Order</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Last Steps</h4>
+				    <p>Add a Featured Image?</p>
+				    <img src="img/add_feat_img.png" class="no-border">
+				    <p>The featured image will be the image associated with this page. It may or may not display somewhere on the page, depending on your WordPress theme.</p>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Last Steps</h4>
+				    <p>Check the Permalink</p>
+				    <img src="img/edit_permalink.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: Actually Publishing</h4>
+				    <p>Finally!</p>
+				    <img src="img/publish_options.png" class="no-border">
+				    <p>You can also save as draft, to edit later.</p>
+				  </section>
+				  <section>
+				    <h4>Publishing a Page: View Your New Page!</h4>
+				    <img src="img/view_page.png" class="no-border">
+				    <p>Your page is now <strong>live on your site</strong>! Woohoo!</p>
+				    <p class="smaller">...but it's not going to be very easy to find unless it's linked from other pages &amp;/or your navigation menu. We'll be getting to that soon!</p>
+				  </section>
+				  <!-- End Pages! -->
+
+				  <!-- Begin Posts -->
+				  <section id="post">
+				    <h3>Publish a Post</h3>
+				    <img src="img/add_post.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: First Steps</h4>
+				    <ul>
+				      <li>Give your post a title.</li>
+				        <ul>
+				          <li>How about "Latest News"?</li>
+				        </ul>
+				      <li>Type your page's content into the editor.</li>
+				        <ul>
+				          <li>Feel free to use <a href="http://www.cheeseipsum.co.uk/" target="_blank">dummy text</a> for now.</li>
+				        </ul>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Getting Fancy</h4>
+				    <p>Posts are written in the same editor as pages, so let's review some of the cool things we learned to do!</p>
+				    <ul>
+				      <li>Format some text in your post: bold, italicize, underline.</li>
+				      <li>Use some subheadings to break up your post content.</li>
+				      <li>Add links.</li>
+				      <li>Add an image.</li>
+				      <li><strong>Bonus points:</strong> link an image to another website!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Post Formats</h4>
+				    <img src="img/post_formats.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Post Formats</h4>
+				    <ul>
+				      <li>Post formats are <em>theme-dependent</em></li>
+				      <li>Some themes don't support them at all</li>
+				      <li>Themes that do support them will display posts differently based on the selected format, without actually changing the post content</li>
+				    </ul>
+				    <p>Learn more: <a href="https://codex.wordpress.org/Post_Formats" target="_blank">Post Formats in the WordPress Codex</a>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Categories</h4>
+				    <img src="img/categories.png" class="no-border float-right">
+				    <ul style="width: 50%;">
+				      <li>Can be used to sort your content according to broad, high-level topics</li>
+				      <li>Like a table of contents for your website</li>
+				      <li><strong>Example:</strong> "Appetizers," "Beverages," "Desserts"</li>
+				      <li>Default category is "Uncategorized", you can change this in your Dashboard under <em>Posts &gt; Categories</em></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Tags</h4>
+				    <img src="img/add_tags.png" class="no-border float-right" style="width: 40%;">
+				    <ul style="width: 50%;">
+				      <li>Can be assigned to posts to help your visitors find related content</li>
+				      <li>Like an index for your website</li>
+				      <li><strong>Example:</strong> "chocolate," "potato," "tofu"</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Featured Image</h4>
+				    <p>Add a Featured Image?</p>
+				    <img src="img/add_feat_img.png" class="no-border">
+				    <p>Theme support for featured images is more common for posts than pages.</p>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Last Steps</h4>
+				    <ul>
+				      <li>Preview your post</li>
+				      <li>Does everything look good?</li>
+				      <li>Test your links!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Publishing a Post: Last Steps</h4>
+				    <ul>
+				      <li>Double-check your permalink</li>
+				    </ul>
+				  </section>
+				   <section>
+				    <h4>Publishing a Post: Actually Publishing</h4>
+				    <ul>
+				      <li>Press the blue button</li>
+				      <li class="fragment">High five! You're a blogger now!</li>
+				      <hr class="fragment">
+				      <li class="fragment">Not ready to publish yet? You can save as draft, or schedule your post to go up in the future.</li>
+				      <li class="fragment">You can even set your post to appear to have been published in the past. Sneaky!</li>
+				    </ul>
+				  </section>
+				  <!-- End Posts! -->
+				  <!--  Pages Vs Posts -->
+				  <section id="vs">
+				    <h3>Pages vs. Posts</h3>
+				    <p>To use a page or a post? That is the question!</p>
+				  </section>
+				  <section>
+				    <h3>Pages vs. Posts</h3>
+				    <p><em>Pages</em> typically serve as the backbone of your site.</p>
+				    <p>Though you can edit them, they're generally static, standard info.</p>
+				    <p>Common pages:</p>
+				    <ul>
+				      <li>About</li>
+				      <li>Contact</li>
+				      <li>Team</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Pages vs. Posts</h3>
+				    <p><em>Posts</em> can be used lots of ways depending on the kind of site you're building, but are generally for more time-sensitive updates.</p>
+				    <ul>
+				      <li>"Blog posts" is where we get the word "posts"</li>
+				      <li>An artist might use "posts" as portfolio entries</li>
+				      <li>A company could use "posts" to share news</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Pages vs. Posts</h3>
+				    <p>Pages are timeless; posts are timely.</p>
+				  </section>
+				  <!-- End Pages vs Posts -->
+				  <!-- Content Tips -->
+				  <section id="contenttips">
+				    <h3>Tips for Creating Good Content</h3>
+				    <ul>
+				      <li>Make it useful and user-friendly</li>
+				      <li>Consider working with a copywriter or editor</li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Content -->
+
+				<!-- Navgation -->
+				<section>
+				  <section>
+				    <h2>Menus</h2>
+				  </section>
+				  <section>
+				    <h3>Navigation Menus</h3>
+				    <p>Menus allow visitors to find the major pages on a website</p>
+				    <img src="img/menu1.png">
+				    <p><em>Primary navigation menus</em> are often found in the header of the site, while additional <em>secondary navigation menus</em> may appear in sidebars, footers, etc.</p>
+				  </section>
+				  <section>
+				    <h4>Create a Menu</h4>
+				    <p>To create menus for our site, we navigate from the Dashboard to Appearance &gt; Menus</p>
+				    <img src="img/edit_menus.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Create a Menu</h4>
+				    <ul>
+				      <li>Your menu needs a name. Only site administrators will ever see this, but it's a good idea to name it something logical like "Main Menu" or "Services."</li>
+				      <li>Add pages, posts, categories, or links from the left-hand column to the menu.</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h4>Create a Menu</h4>
+				    <p>You can drag &amp; drop the menu items to reorder them, or even create sub-items (will display as dropdowns in most themes)</p>
+				    <img src="img/menu_order.png" class="no-border">
+				  </section>
+				  <section>
+				    <h4>Create a Menu</h4>
+				    <p>Click the arrow on the right-hand side of the menu item to expand it and see further options.</p>
+				    <img src="img/expand_menu_item.png" class="no-border">
+				    <p class="smaller"><strong>WordPress Trick</strong>: Check the screen options for more fields</p>
+				  </section>
+				  <section>
+				    <h4>Where can we put menus?</h4>
+				    <ul>
+				      <li>This is another thing that depends on the theme</li>
+				      <li>Themes come with <em>menu areas</em>, which are the places menus can go</li>
+				      <li>Menus can also live in <em>widgets</em>, which we'll learn about shortly</li>
+				      <!-- <li>The TwentyFifteen WordPress theme includes a Primary Menu area and a Social Links menu area</li> -->
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Link Your Content</h3>
+				    <p>Another way to move visitors through your site is by linking your content effectively.</p>
+				    <ul>
+				      <li>Use categories and tags on your posts</li>
+				      <li>Consider a "related posts" plugin</li>
+				      <li>When you mention something you've written about before, link back to it!</li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Navigation -->
+
+				<!-- Widgets -->
+				<section>
+				  <section>
+				    <h2>Widgets</h2>
+				  </section>
+				  <section>
+				    <h3>What is a Widget?</h3>
+				    <ul>
+				      <li>Widgets are content areas that can be added to your theme's <em>widget areas</em>, which often include sidebars, footers, and headers</li>
+				      <li>Widgets often pull in dynamic content from your site or your social media feeds</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>What is a Widget?</h3>
+				    <p>Example widgets in action:</p>
+				    <!-- <img src="img/widget1.png"> -->
+				    <img src="img/widget2.png">
+				    <img src="img/widget3.png">
+				  </section>
+				  <section>
+				    <h3>Add Widgets to Your Site!</h3>
+				    <p>To manage widgets, we navigate to Appearance &gt; Widgets in the Dashboard</p>
+				    <img src="img/edit_widgets.png" class="no-border float-left" style="width: 40%;">
+				    <ul class="float-right" style="width: 50%;">
+				      <li>The left-hand column shows our available widgets</li>
+				      <li>The right-hand column shows our theme's widget areas</li>
+				      <li>Drag &amp; drop widgets from left to right</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Editing Widgets</h3>
+				    <ul>
+				      <li>Note that there is no big blue "Save" button on our widgets screen</li>
+				      <li>As soon as we drop a widget into place, it's live!</li>
+				      <li>If you do edit the <em>widget content</em>, you'll need to save that</li>
+				      <li>Not sure you want a widget on your site, but not ready to scrap it completely? Move it to the "inactive widgets" area in the lower left column</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Get More Widgets!</h3>
+				    <p>By default, WordPress comes with the selection of widgets you see on your site now.</p>
+				    <p>Want more widgets? There are <em>plugins</em> for that, and plugins happen to be our next topic. :)</p>
+				  </section>
+				</section>
+				<!-- End Widgets -->
+
+				<!-- Plugins -->
+				<section>
+				  <section>
+				    <h2>Extending WordPress with Plugins</h2>
+				  </section>
+				  <section>
+				    <h2>Plugins</h2>
+				    <p><em>Plugins</em> are add-ons for WordPress</p>
+				    <ul>
+				      <li>Some plugins add content our users will see</li>
+				      <li>Some plugins help us manage our site better</li>
+				      <li>Plugins can be free or premium ($$)</li>
+				      <li>Plugins != Widgets</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>What do plugins look like?</h2>
+				    <ul>
+				      <li>Plugins are directories containing code (always some PHP, often some JavaScript and CSS as well)</li>
+				      <li>When we add a plugin to our site, WordPress saves it in <strong>wp-content/plugins</strong></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>Manage Plugins</h2>
+				    <p>To manage the plugins on your site, navigate to Plugins in your Dashboard</p>
+				    <img src="img/plugins.png" class="no-border">
+				  </section>
+				  <section>
+				    <h2>Where do you find new plugins?</h2>
+				    <ul>
+				      <li>WordPress maintains a <em>plugin directory</em></li>
+				      <li>Access the directory from your Dashboard under Plugins &gt; Add New</li>
+				      <li>Access the directory online at <a href="https://wordpress.org/plugins/" target="_blank">wordpress.org/plugins</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>How to spot a good plugin</h2>
+				    <ul>
+				      <li>How recently has it been updated?</li>
+				      <li>What do the reviews say?</li>
+				      <li>Are the support threads resolved?</li>
+				      <li>Is it compatible with the latest version of WordPress?</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>After you install a plugin...</h2>
+				    <ul>
+				      <li>Configure options</li>
+				      <li>Does it work the way you expected?</li>
+				      <li>Keep it up to date!</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Contact Forms</h4>
+				      <ul>
+				        <li><a href="https://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a></li>
+				        <li><a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a> ($)</li>
+				      </ul>
+				  </section>
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Photo Galleries &amp; Slideshows</h4>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/galleria/" target="_blank">Galleria</a></li>
+				      <li><a href="https://wordpress.org/plugins/meteor-slides/" target="_blank">Meteor Slides</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Collecting Email Addresses</h4>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/mailchimp-for-wp/" target="_blank">MailChimp</a></li>
+				      <li><a href="http://www.gravityforms.com/" target="_blank">Gravity Forms</a> ($)</li>
+				      <li><a href="https://wppopupmaker.com/" target="_blank">Popup Maker</a> <span class="smaller">*use with caution! Don't be annoying!</span></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>SEO improvements</h4>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a></li>
+				      <li><a href="https://wordpress.org/plugins/all-in-one-seo-pack/" target="_blank">All in One SEO Pack</a></li>
+				      <li><a href="https://wordpress.org/plugins/google-analytics-for-wordpress/" target="_blank">Google Analytics for WordPress</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Backing Up WordPress</h4>
+				    <ul>
+				      <li><a href="https://ithemes.com/purchase/backupbuddy/" target="_blank">BackupBuddy</a> ($)</li>
+				      <li><a href="https://wordpress.org/plugins/duplicator/" target="_blank">Duplicator</a></li>
+				    </ul>
+				  </section>
+				<!--   <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Mobile Support</h4>
+				  </section> -->
+				  <section>
+				    <h3>Use Plugins For:</h3>
+				    <h4>Social Media Support</h4>
+				    <p class="underline">Sharing Your Content</p>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/jetpack/" target="_blank">Jetpack</a></li>
+				      <li><a href="https://wordpress.org/plugins/add-to-any/" target="_blank">Share Buttons by Add to Any</a></li>
+				    </ul>
+				    <br><br>
+				    <p class="underline">Displaying Your Feeds</p>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/custom-facebook-feed/" target="_blank">Custom Facebook Feed</a></li>
+				      <li><a href="https://wordpress.org/plugins/easy-twitter-feed-widget/" target="_blank">Easy Twitter Widget</a></li>
+				      <li><a href="https://wordpress.org/plugins/wp-instagram-widget/" target="_blank">WP Instagram Widget</a></li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Plugins -->
+
+				<!-- Themes -->
+				<section>
+				  <section>
+				  <h2>Customizing Your WordPress Site's Design</h2>
+				  </section>
+				  <section>
+				    <h3>WordPress Themes</h3>
+				    <p><em>Themes</em> modify the way your site is displayed, without modifying the underlying software.</p>
+				    <p>In addition to changing the look of your site, many themes come with additional functionality.</p>
+				  </section>
+				  <section>
+				    <h3>Theme Features</h3>
+				    <ul>
+				      <li>Page Templates</li>
+				      <li>Widget Areas</li>
+				      <li>Menu Areas</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Finding Themes</h3>
+				    <ul>
+				      <li>Like plugins, themes have a directory you can access in your Dashboard (Appearance &gt; Themes &gt; Add New) or online (<a href="https://wordpress.org/themes" target="_blank">wordpress.org/themes</a>)</li>
+				      <li>You can also find themes on the web at large, or make your own!</li>
+				      <li>Themes can be free or premium.</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Finding a Good Theme</h3>
+				    <p>When possible, view a demo of the theme in action. Ask:</p>
+				    <ul>
+				      <li>Is it responsive?</li>
+				      <li>Does it load quickly?</li>
+				      <li>Is anything broken?</li>
+				      <li>What do others say?</li>
+				      <li>Has it been updated recently?</li>
+				      <li>Does it have the content areas you need?</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Installing a Theme</h3>
+				    <ol>
+				      <li>Live preview</li>
+				      <li>Activate</li>
+				      <li>Customize</li>
+				    </ol>
+				  </section>
+				  <section>
+				    <h3>Customizing Your Theme: Settings</h3>
+				    <ul>
+				      <li>No code required!</li>
+				      <li>Number of customization options available varies widely from theme to theme.</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Customizing Your Theme: Settings</h3>
+				    <img src="img/customize_theme1.png" class="no-border">
+				    <img src="img/customize_theme2.png" class="no-border">
+				    <img src="img/customize_theme3.png" class="no-border">
+				  </section>
+				  <section>
+				    <h3>Customizing Your Theme: Child Themes</h3>
+				    <ul>
+				      <li>If you know some CSS, you can make a child theme!</li>
+				      <li><em>Child themes</em> are WordPress themes that rely on a <em>parent theme</em> for much of their functionality and style</li>
+				      <li>Almost any theme can be a parent theme</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Child Theme Example</h3>
+				    <img src="img/2015_theme.png" class="no-border" style="width:40%;">
+				    <img src="img/child_theme.jpg" class="no-border" style="width:40%;">
+				    <p class="smaller">Left: <a href="https://wordpress.org/themes/twentyfifteen/" target="_blank">Twentyfifteen theme</a> | Right: <a href="https://www.tipsandtricks-hq.com/wordpress-twenty-fifteen-2015-child-theme-with-right-sidebar-7732" target="_blank">Twentyfifteen child theme</a></p>
+				  </section>
+				</section>
+				<!-- End Themes -->
+
+				<!-- Security -->
+				<section>
+				  <section>
+				    <h2>Security for WordPress</h2>
+				  </section>
+				  <section>
+				    <h3>Is WordPress Secure?</h3>
+				  </section>
+				    <section>
+				    <h3>Best Practices for Security</h3>
+				    <ul>
+				      <li><strong>Keep WordPress up to date!</strong></li>
+				      <li>Keep plugins and themes up to date</li>
+				      <li>Install themes &amp; plugins from trusted sources only</li>
+				      <li>Don't use "admin" as a username, and keep your username private when possible</li>
+				      <li>Use strong passwords, and change them frequently</li>
+				    </ul>
+				    <p>Read more: <a href="http://codex.wordpress.org/Hardening_WordPress" target="_blank">Hardening WordPress</a></p>
+				  </section>
+				  <section>
+				    <h3>Plugins for Security</h3>
+				    <ul>
+				      <li><a href="https://wordpress.org/plugins/sucuri-scanner/" target="_blank">Sucuri</a></li>
+				      <li><a href="https://wordpress.org/plugins/better-wp-security/" target="_blank">iThemes Security</a></li>
+				      <li><a href="https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/" target="_blank">All in One WP Security &amp; Firewall</a></li>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Security -->
+
+				<!-- Maintenance -->
+				<section>
+				  <section>
+				    <h2>Maintaining Your WordPress Website</h2>
+				  </section>
+				  <section>
+				    <h3>Keep It Up to Date!</h3>
+				    <p>WordPress will let you know when updates are available:</p>
+				    <img src="img/updates_available.png" class="no-border">
+				    <p>Log in regularly to see what needs updating!</p>
+				  </section>
+				  <section>
+				    <h3>Back Up Your Site</h3>
+				    <ul>
+				      <li>You can save your database by downloading it: Tools &gt; Export</li>
+				      <li>It's worth using a plugin to capture full backups</li>
+				      <ul>
+				        <li><a href="https://ithemes.com/purchase/backupbuddy/" target="_blank">BackUp Buddy</a>: $$, fairly user-friendly, allows scheduled backups</li>
+				        <li><a href="https://wordpress.org/plugins/duplicator/" target="_blank">Duplicator</a>: free, more complicated to use</li>
+				      </ul>
+				    </ul>
+				  </section>
+				</section>
+				<!-- End Maintenance -->
+
+				<section>
+				  <h2>Questions?</h2>
+				</section>
+
+				<section>
+				  <section>
+				    <h2>Tons of WordPress Resources!</h2>
+				  </section>
+				  <section>
+				    <h3>WordPress Resources: General</h3>
+				    <ul>
+				      <li><a href="http://codex.wordpress.org/" target="_blank">WordPress Codex</a>: The Wikipedia of WordPress</li>
+				      <li><a href="odex.wordpress.org/Getting_Started_with_WordPress" target="_blank">Codex: Getting Started with WordPress</a></li>
+				      <li><a href="http://codex.wordpress.org/WordPress_Lessons" target="_blank">Codex: WordPress Lessons</a></li>
+				      <li><a href="http://www.wpbeginner.com/" target="_blank">WPBeginner</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>WordPress Resources: Blogs</h3>
+				    <ul>
+				      <li><a href="https://digwp.com/" target="_blank">Digging into WordPress</a></li>
+				      <li><a href="https://poststatus.com/" target="_blank">Post Status</a></li>
+				      <li><a href="http://wptavern.com/" target="_blank">WP Tavern</a></li>
+				      <li><a href="http://www.smashingmagazine.com/category/wordpress/" target="_blank">Smashing Magazine</a></li>
+				      <li><a href="http://zoerooney.com/" target="_blank">Zoe Rooney</a></li>
+				      <li><a href="http://chrislema.com/" target="_blank">Chris Lema</a></li>
+				    </ul>
+				    <p class="smaller"><strong>Lots more</strong>: <a href="http://www.codeinwp.com/blog/100-wordpress-blogs-and-their-best-posts/">Top 101 Blogs About WordPress and Their Most Popular Posts</a></p>
+				  </section>
+				  <section>
+				    <h3>WordPress Resources: Video</h3>
+				    <ul>
+				      <li><a href="http://wordpress.tv/" target="_blank">WordPress.tv</a></li>
+				      <li><a href="http://wpsessions.com/" target="_blank">WPSessions</a></li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>WordPress Resources: IRL</h3>
+				    <ul>
+				      <li><a href="https://central.wordcamp.org/" target="_blank">WordCamp</a>!</li>
+				      <li><a href="http://www.meetup.com/metro-detroit-wordpress-meetup/" target="_blank">Metro Detroit WordPress Meetup</a></li>
+				      <li><a href="http://www.meetup.com/WordPress-Ann-Arbor/" target="_blank">WordPress Ann Arbor</a></li>
+				    </ul>
+				  </section>
+				</section>
+
+				<section>
+				  <section>
+				    <h2>Thank you!</h2>
+				    <p>I'm here for you if you have questions or need help!</p>
+				    <p>leeann.drees@gmail.com | @leeanndrees</p>
+				  </section>
+				</section>
+
 			</div>
 		</div>
 
