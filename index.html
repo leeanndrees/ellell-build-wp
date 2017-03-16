@@ -55,7 +55,11 @@
 					</section>
 				  <section>
 				    <h2>About You</h2>
+<<<<<<< HEAD
 				    <ul style="width: 60%;">
+=======
+				    <ul>
+>>>>>>> origin/master
 				      <li>What's your name?</li>
 				      <li>Have you used WordPress?</li>
 				      <li>Your first concert <i class="twa twa-guitar"></i></li>
@@ -114,7 +118,7 @@
 				      <li>Speed <i class="twa twa-horse-racing"></i></li>
 				      <li>Popularity <i class="twa twa-chart-with-upwards-trend"></i></li>
 				      <li>Flexibility <i class="twa twa-curly-loop"></i></li>
-				      <li>Collaboration <i class="twa twa-couple"></i></li>
+				      <li>Collaboration <i class="twa twa-busts-in-silhouette"></i></li>
 				      <li>Client-friendly <i class="twa twa-necktie"></i></li>
 				      <li>Budget-friendly <i class="twa twa-money-bag"></i></li>
 				    </ul>
@@ -265,24 +269,24 @@
 				    <h3>Installing WordPress: Manual</h3>
 				    <p class="align-left">Edit 4 lines in <strong>wp-config-sample.php</strong></p>
 				    <pre><code>
-				// ** MySQL settings - You can get this info from your web host ** //
-				/** The name of the database for WordPress */
-				define('DB_NAME', 'database_name_here');
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'database_name_here');
 
-				/** MySQL database username */
-				define('DB_USER', 'username_here');
+/** MySQL database username */
+define('DB_USER', 'username_here');
 
-				/** MySQL database password */
-				define('DB_PASSWORD', 'password_here');
+/** MySQL database password */
+define('DB_PASSWORD', 'password_here');
 
-				/** MySQL hostname */
-				define('DB_HOST', 'localhost');
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
 
-				/** Database Charset to use in creating database tables. */
-				define('DB_CHARSET', 'utf8');
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
 
-				/** The Database Collate type. Don't change this if in doubt. */
-				define('DB_COLLATE', '');</code></pre>
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');</code></pre>
 				    <p>Save the file and rename it to <strong>wp-config.php</strong></p>
 				  </section>
 				  <section>
@@ -303,6 +307,20 @@
 				    <p><a href="codex.wordpress.org/Installing_WordPress" target="_blank">Detailed instructions in the WordPress Codex</a></p>
 				    <p>WordPress calls this the "Famous 5-minute Install," which might be a less than completely accurate. :)</p>
 				  </section>
+					<section>
+	          <h3>Local WordPress Instances</h3>
+	          <p>Today we'll be working with local installations of WordPress.</p>
+	          <p>Local installations live on your computer, not on the web.</p>
+	        </section>
+	        <section>
+	          <h3>Install WordPress Locally</h3>
+	          <p>If you haven't already, complete a local installation by visiting <a href="https://bitnami.com/stack/wordpress/installer" target="_blank">https://bitnami.com/stack/wordpress/installer</a> and following the instructions to install the latest version of <strong>WordPress</strong> on your machine.</p>
+	          <hr>
+	          <p><a href="https://youtu.be/ad6ZSLV0LyY" target="_blank">Video Instructions</a></p>
+	          <hr>
+	          <p><strong class="red">STUCK?</strong> Raise your hand!</p>
+	          <p><strong class="green">DONE?</strong> Take a break!</p>
+	        </section>
 				  <section>
 				    <h2>Hands on: Let's Install WordPress!</h2>
 				    <ol>
@@ -388,13 +406,11 @@
 				<section id="content">
 				  <section>
 				    <h2>Adding Content to Your WordPress Website</h2>
-				    <ul>
-				      <li><a href="#page">Publish a Page</a></li>
-				      <li><a href="#post">Publish a Post</a></li>
-				    </ul>
 				  </section>
 				  <section id="page">
 				    <h3>Publish a Page</h3>
+
+						<em>Dashboard &gt; Pages &gt; Add New</em>
 				  </section>
 				  <section>
 				    <h4>Publishing a Page: First Steps</h4>
@@ -442,8 +458,8 @@
 				    <p>The placement of your cursor matters!</p>
 				  </section>
 				  <section>
-				    <h4>Publishing a Page: Adding Images</h4>
-				    <ul style="width: 60%; font-size: 90%;">
+				    <h4>Publishing a Page: Image Options</h4>
+				    <ul style="font-size: 90%;">
 				      <li><strong>Caption</strong>: will usually display on your page (depending on your theme)</li>
 				      <li><strong>Alt text</strong>: important for accessibility and SEO</li>
 				      <li><strong>Description</strong>: Displays on the attachment page</li>
@@ -492,6 +508,7 @@
 				  <!-- Begin Posts -->
 				  <section id="post">
 				    <h3>Publish a Post</h3>
+						<em>Dashboard &gt; Posts &gt; Add New</em>
 				  </section>
 				  <section>
 				    <h4>Publishing a Post: First Steps</h4>
@@ -629,7 +646,7 @@
 				  </section>
 				  <section>
 				    <h4>Create a Menu</h4>
-				    <p>To create menus for our site, we navigate from the Dashboard to Appearance &gt; Menus</p>
+				    <p>To create menus for our site, we navigate from the Dashboard to <em>Appearance &gt; Menus</em></p>
 				  </section>
 				  <section>
 				    <h4>Create a Menu</h4>
@@ -645,7 +662,7 @@
 				  <section>
 				    <h4>Create a Menu</h4>
 				    <p>Click the arrow on the right-hand side of the menu item to expand it and see further options.</p>
-				    <p class="smaller"><strong>WordPress Trick</strong>: Check the screen options for more fields</p>
+				    <p class="smaller"><strong>Tip</strong>: Check the screen options for more fields</p>
 				  </section>
 				  <section>
 				    <h4>Where can we put menus?</h4>
@@ -686,8 +703,8 @@
 				  </section>
 				  <section>
 				    <h3>Add Widgets to Your Site!</h3>
-				    <p>To manage widgets, we navigate to Appearance &gt; Widgets in the Dashboard</p>
-				    <ul class="float-right" style="width: 50%;">
+				    <p>To manage widgets, we navigate to <em>Appearance &gt; Widgets</em> in the Dashboard</p>
+				    <ul>
 				      <li>The left-hand column shows our available widgets</li>
 				      <li>The right-hand column shows our theme's widget areas</li>
 				      <li>Drag &amp; drop widgets from left to right</li>
@@ -705,7 +722,7 @@
 				  <section>
 				    <h3>Get More Widgets!</h3>
 				    <p>By default, WordPress comes with the selection of widgets you see on your site now.</p>
-				    <p>Want more widgets? There are <em>plugins</em> for that, and plugins happen to be our next topic. :)</p>
+				    <p>Want more widgets? There are <em>plugins</em> for that, and plugins happen to be our next topic. <i class="twa twa-smiling-face-with-sunglasses"></i></p>
 				  </section>
 				</section>
 				<!-- End Widgets -->
@@ -739,8 +756,8 @@
 				  <section>
 				    <h2>Where do you find new plugins?</h2>
 				    <ul>
-				      <li>WordPress maintains a <em>plugin directory</em></li>
-				      <li>Access the directory from your Dashboard under Plugins &gt; Add New</li>
+				      <li>WordPress maintains a plugin directory</li>
+				      <li>Access the directory from your Dashboard under <em>Plugins &gt; Add New</em></li>
 				      <li>Access the directory online at <a href="https://wordpress.org/plugins/" target="_blank">wordpress.org/plugins</a></li>
 				    </ul>
 				  </section>
@@ -847,7 +864,7 @@
 				  <section>
 				    <h3>Finding Themes</h3>
 				    <ul>
-				      <li>Like plugins, themes have a directory you can access in your Dashboard (Appearance &gt; Themes &gt; Add New) or online (<a href="https://wordpress.org/themes" target="_blank">wordpress.org/themes</a>)</li>
+				      <li>Like plugins, themes have a directory you can access in your Dashboard (<em>Appearance &gt; Themes &gt; Add New</em>) or online (<a href="https://wordpress.org/themes" target="_blank">wordpress.org/themes</a>)</li>
 				      <li>You can also find themes on the web at large, or make your own!</li>
 				      <li>Themes can be free or premium.</li>
 				    </ul>
@@ -940,7 +957,7 @@
 				  <section>
 				    <h3>Back Up Your Site</h3>
 				    <ul>
-				      <li>You can save your database by downloading it: Tools &gt; Export</li>
+				      <li>You can save your database by downloading it: <em>Tools &gt; Export</em></li>
 				      <li>It's worth using a plugin to capture full backups</li>
 				      <ul>
 				        <li><a href="https://ithemes.com/purchase/backupbuddy/" target="_blank">BackUp Buddy</a>: $$, fairly user-friendly, allows scheduled backups</li>
@@ -1000,8 +1017,9 @@
 				<section>
 				  <section>
 				    <h2>Thank you!</h2>
-				    <p>I'm here for you if you have questions or need help!</p>
-				    <p>leeann.drees@gmail.com | @leeanndrees</p>
+				    <p>We're here for you if you have questions or need help!</p>
+				    <p><i class="twa twa-incoming-envelope"></i> leeann@ellell.co | laura@ellell.co</p>
+						<p><i class="twa twa-speech-balloon"></i> @ellellco | @grandcircusco</p>
 				  </section>
 				</section>
 
