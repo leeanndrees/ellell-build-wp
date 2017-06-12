@@ -68,7 +68,7 @@ body {
   /*background-color: #333;*/}
 
 .reveal h2 {
-  font-size: 2.11em;
+  font-size: 2em;
   font-weight: 700;}
 
 .reveal h3 {
@@ -341,4 +341,20 @@ header img {
 
 #no-wrap {
   word-wrap: break-word;
+}
+
+/*********************************************
+* HELPER CLASSES
+**********************************************/
+
+.underline {
+  text-decoration: underline;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.smaller, .reveal .smaller {
+  font-size: 80%;
 }
