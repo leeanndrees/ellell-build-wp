@@ -359,3 +359,13 @@ header img {
 .smaller, .reveal .smaller {
   font-size: 80%;
 }
+
+
+/* Presenter Cue */
+.who {
+  position: fixed;
+  bottom: 20px;
+  left: 15px;
+  height: 10px;
+  width: 10px;
+}

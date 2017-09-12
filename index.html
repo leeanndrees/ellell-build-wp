@@ -33,7 +33,7 @@
 						<h2>Build Your First WordPress Website</h2>
 				    <p>#GCWordPress</p>
 				  </section>
-				  <section>
+				  <section class="laura">
 				    <h2>About: Laura Eagin</h2>
 			             <p>Graphic designer turned web developer slash entrepreneur. DIY-enthusiast. Cat &amp; Foster Cat Mom.</p>
 			             <ul>
@@ -41,7 +41,7 @@
 				              <li class="fragment" style="margin-bottom: 10px;">E-mail: <a href="mailto:laura@ellell.co">Laura@ellell.co</a></li>
 			             </ul>
 				  </section>
-					<section>
+					<section class="leeann">
 				    <h2>About: Leeann Drees</h2>
 							<p>Web developer who loves to teach, read, and bake. Has unreasonably cute cats.</p>
 							<ul>
@@ -1105,6 +1105,16 @@
 					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		  function PresenterCue() {
+		    $( '.laura' ).append( '<div class="who"><i class="twa twa-large-orange-diamond"></i></div>' );
+				$( '.leeann').append( '<div class="who"><i class="twa twa-large-blue-diamond"></i></div>')
+		  }
+
+		  $(document).ready(PresenterCue());
 		</script>
 	</body>
 </html>
